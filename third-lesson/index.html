@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="http://maximumstart.herokuapp.com/register" method="GET">
+	<h1>Регистрация</h1>
+    	<p>
+    		<label for="Namefield">Имя</label>
+    		<input type="Text" id="Namefield" name="Name" required>
+        </p>
+        <p>    
+    		<label for="Surnamefield">Фамилия</label>
+    		<input type="Text" id="Surnamefield" name="Surname" required>
+    	</p>   
+    	<p>
+    		<label for="Phonefield">Телефон</label>
+    		<input type="Phone" id="Phonefield" name="phone" required>
+    	</p>
+            <label for="Colorfield">Любимый цвет</label>
+    		<input type="Color" id="Colorfield" name="color" required>
+    	<p>
+    		<label for="Datefield">Сегоднящнее число</label>
+            <input type="Date" id="Datefield" name="date" required>   
+        </p>
+        <p>    
+            <label for="Passwordfield">Пароль</label>
+    		<input type="Text" id="Passwordfield" name="password" required>
+        </p>
+    	<p>
+            <label for="">Мальчик</label>
+    	    <input type="radio" name="gender">
+        </p>
+            <label for="">Девочка</label>
+    	    <input type="radio" name="gender">
+        <p>
+            <label for="">Не определился</label>
+    	    <input type="radio" name="gender">
+    	</p>
+        <p>
+            <label for="Messagefield">Сообщение</label>
+            <input type="Textarea" name="1">
+        </p>
+    	<p>
+    		<input type="submit" value="Отправить">
+    	</p>	
+	</form>
+</body>
+</html>
