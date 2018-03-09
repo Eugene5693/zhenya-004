@@ -3,45 +3,49 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<form action="http://maximumstart.herokuapp.com/register" method="GET">
+	<form class="form" action="http://maximumstart.herokuapp.com/register" method="GET">
 	<h1>Регистрация</h1>
     	<p>
     		<label for="Namefield">Имя</label>
-    		<input type="Text" id="Namefield" name="Name" required>
+    		<input type="text" id="Namefield" name="name" required>
         </p>
         <p>    
     		<label for="Surnamefield">Фамилия</label>
-    		<input type="Text" id="Surnamefield" name="Surname" required>
+    		<input type="text" id="Surnamefield" name="surname" required>
     	</p>   
     	<p>
     		<label for="Phonefield">Телефон</label>
-    		<input type="Phone" id="Phonefield" name="phone" required>
+    		<input type="phone" id="Phonefield" name="phone" required>
     	</p>
             <label for="Colorfield">Любимый цвет</label>
-    		<input type="Color" id="Colorfield" name="color" required>
+    		<input type="color" id="Colorfield" name="color" required>
     	<p>
     		<label for="Datefield">Сегоднящнее число</label>
-            <input type="Date" id="Datefield" name="date" required>   
+            <input type="date" id="Datefield" name="date" required>   
         </p>
         <p>    
             <label for="Passwordfield">Пароль</label>
-    		<input type="Text" id="Passwordfield" name="password" required>
+    		<input type="text" id="Passwordfield" name="password" required>
         </p>
-    	<p>
+    	
+    	    <input type="radio" name="gender" value="Мальчик">
             <label for="">Мальчик</label>
-    	    <input type="radio" name="gender">
-        </p>
+    	    
+
+            <input type="radio" name="gender" value="Девочка">
             <label for="">Девочка</label>
-    	    <input type="radio" name="gender">
-        <p>
+    	    
+
+            <input type="radio" name="gender" value="Не определился">       
             <label for="">Не определился</label>
-    	    <input type="radio" name="gender">
-    	</p>
+    	    
+    	
         <p>
             <label for="Messagefield">Сообщение</label>
-            <input type="Textarea" name="1">
+            <textarea name="message" id="Messagefield" cols="30" rows="10" required></textarea>
         </p>
     	<p>
     		<input type="submit" value="Отправить">
